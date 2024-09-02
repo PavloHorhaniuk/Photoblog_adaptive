@@ -1,0 +1,32 @@
+.galleri-link{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--color-card-link)
+}
+.galleri-list-title{
+    /* font-family: "Playfair Display", sans-serif; */
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--color-main)
+}
+.galleri-text{
+    /* font-family: "Playfair Display", sans-serif; */
+    /* font-weight: 400; */
+    font-size: 14px;
+    color: var(--color-main)
+}
+.button{
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-main)
+}
+.galleri-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.galleri-item{
+    width: 420px;
+}
