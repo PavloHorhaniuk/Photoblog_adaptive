@@ -1,0 +1,21 @@
+.header-nav-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 71px;
+    margin-bottom: 92px;
+}
+
+.header-nav-list-item:not(:last-child) {
+    margin-right: 99px;
+}
+
+.header-nav-list-item-link {
+    /* font-family: "Playfair Display", sans-serif; */
+    /* font-weight: 400; */
+    font-size: 14px;
+    color: var(--color-link)
+}
+
+.header-nav-list-item-link:hover {
+    color: var(--color-hover);
+}
