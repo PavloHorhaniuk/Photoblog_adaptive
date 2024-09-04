@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Playfair Display", sans-serif;
+  /* font-weight: 400; */
+  color: var(--color-main);
+}
+
+.container {
+  width: 905px;
+  margin: 0 auto;
+  outline: solid 2px red;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 71px;
+  margin-bottom: 92px;
+}
+
+.header-nav-list-item:not(:last-child) {
+  margin-right: 99px;
+}
+
+.header-nav-list-item-link {
+  /* font-family: "Playfair Display", sans-serif; */
+  /* font-weight: 400; */
+  font-size: 14px;
+  color: var(--color-link);
+}
+
+.header-nav-list-item-link:hover {
+  color: var(--color-hover);
+}
+
+.galleri-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.galleri-list:nth-last-child(2) {
+  margin-top: 130px;
+}
+
+.galleri-item {
+  width: 420px;
+  /* margin-bottom: 130px; */
+}
+
+.galleri-item:nth-child(1) {
+  margin-bottom: 130px;
+}
+
+.galleri-item:nth-child(4) {
+  margin-bottom: 130px;
+}
+
+.galleri-list-title {
+  /* font-family: "Playfair Display", sans-serif; */
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 32px;
+  color: var(--color-main);
+}
+
+.galleri-img {
+  margin-bottom: 62px;
+}
+
+.galleri-link {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--color-card-link);
+}
+
+.galleri-text {
+  /* font-family: "Playfair Display", sans-serif; */
+  /* font-weight: 400; */
+  font-size: 14px;
+  margin-top: 40px;
+  color: var(--color-main);
+}
+
+.box-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.button {
+  font-family: "Playfair Display", sans-serif;
+  text-align: center;
+  justify-content: center;
+  width: 165px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-main);
+}
+
+:root {
+  --color-main: #626262;
+  --color-link: #7D7D7D;
+  --color-card-link: #B4AD9E;
+  --color-hover: #03A9F4;
+}/*# sourceMappingURL=main.css.map */
