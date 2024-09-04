@@ -29,9 +29,28 @@ body {
 }
 
 .container {
-  width: 905px;
+  width: 100%;
+  min-width: 320px;
   margin: 0 auto;
-  outline: solid 2px red;
+  outline: solid 1px red;
+}
+@media screen and (min-width: getBreakPoint("mobile")) {
+  .container {
+    max-width: getBreakPoint("mobile");
+    outline: solid 1px red;
+  }
+}
+@media screen and (min-width: getBreakPoint("tablet")) {
+  .container {
+    max-width: getBreakPoint("tablet");
+    outline: solid 1px blue;
+  }
+}
+@media screen and (min-width: getBreakPoint("desktop")) {
+  .container {
+    max-width: getBreakPoint("desktop");
+    outline: solid 1px orange;
+  }
 }
 
 .header-nav-list {
