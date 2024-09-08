@@ -1,10 +1,13 @@
 @import "./base/reset";
 @import "./base/common";
 
-@import "./components/conteiner";
+@import "./components/container";
+@import "./components/modal";
 
 @import "./layout/01-header";
 @import "./layout/02-gallery";
 
 @import "./utils/variables";
-@import "./utils/breakpoints";
+@import "./utils/plaseholders";
+@import "./utils/mixin";
+

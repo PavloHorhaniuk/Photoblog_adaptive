@@ -18,15 +18,99 @@
 <body>
     <header class="header">
         <div class="container">
-            <!-- <a class="header-link" href="./">
-            <img class="header-link-img"
-                src="https://img.icons8.com/officel/40/stack-of-photos.png" 
-                alt="Logo Photoblog" 
-                width="40" 
-            />
-            <br/>
-                Photoblog.dev
-        </a> -->
+            <!-- <div class="container-menu">
+                <button
+                  class="menu-toggle js-open-menu"
+                  aria-expanded="false"
+                  aria-controls="mobile-menu"
+                >
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" fill="black" />
+                </svg>
+                </button>
+            </div> -->
+
+
+
+
+            <!-- <label for="modal-toggle">
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" fill="black" />
+                  </svg>
+            </label>
+        
+            Чекбокс для контролю модального вікна
+            <input type="checkbox" id="modal-toggle">
+        
+            Модальне вікно
+            <div class="modal">
+                <div class="modal-content">
+                    <ul class="mogal-list">
+                        <li class="modal-item">
+                            <a class="modal-link" href="">LIFESTYLE</a>
+                        </li>
+                        <li class="modal-item">
+                            <a class="modal-link" href="">PHOTODIARY</a>
+                        </li>
+                        <li class="modal-item">
+                            <a class="modal-link" href="">MUSIC</a>
+                        </li>
+                        <li class="modal-item">
+                            <a class="modal-link" href="">TRAVEL</a>
+                        </li>
+                    </ul>
+                    Кнопка для закриття модального вікна
+                    <label for="modal-toggle" class="close-btn">Закрити</label>
+                </div>
+            </div> -->
+
+
+             <!-- SVG бургер кнопка для відкриття меню -->
+    <label for="menu-toggle">
+        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" fill="black" />
+          </svg>
+    </label>
+
+    <!-- Чекбокс для контролю меню -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- Повноекранне меню -->
+    <div class="menu">
+        <div class="menu-content">
+            <ul class="mogal-list">
+                <li class="modal-item">
+                    <a class="modal-link" href="">LIFESTYLE</a>
+                </li>
+                <li class="modal-item">
+                    <a class="modal-link" href="">PHOTODIARY</a>
+                </li>
+                <li class="modal-item">
+                    <a class="modal-link" href="">MUSIC</a>
+                </li>
+                <li class="modal-item">
+                    <a class="modal-link" href="">TRAVEL</a>
+                </li>
+            </ul>
+        </div>
+        <!-- SVG кнопка для закриття меню -->
+        <label for="menu-toggle">
+            <svg class="close-btn"
+            fill="currentColor" 
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="19"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </label>
+    </div>
+
             <nav class="header-nav">
                 <ul class="header-nav-list">
                     <li class="header-nav-list-item">
@@ -43,12 +127,20 @@
                     </li>
                 </ul>
             </nav>
+            <!-- <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a class="header-link active" href="./">LIFESTYLE</a>
+                    <li class="header-item"><a class="header-link" href="./">PHOTODIARY</a></li>
+                    <li class="header-item"><a class="header-link" href="./">MUSIC</a></li>
+                    <li class="header-item"><a class="header-link" href="./">TRAVEL</a></li>
+                </ul>
+            </nav> -->
         </div>
     </header>
     <main>
-        <section class="section-galleri">
-            <div class="container">
-                <!-- <h2 class="galleri-title">Photoblog</h2> -->
+        <section class="gallery">
+            <div class="container header-div">
+                <h1 class="gallery-title">Photoblog</h1>
                 <ul class="galleri-list">
                     <li class="galleri-item">
                         <img class="galleri-img" src="./images/img1.jpg" alt="photo1">
@@ -129,8 +221,8 @@
                         </div>
                     </li>
                 </ul>
-                <div class="box-button">
-                    <button class="button" type="button">Load more</button>
+                <div class="galleri-box-button">
+                    <button class="galleri-button" type="button">Load more</button>
                 </div>
             </div>
         </section>

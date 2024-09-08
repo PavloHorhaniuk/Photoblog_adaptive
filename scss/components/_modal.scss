@@ -1,0 +1,167 @@
+.mogal-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-link {
+    text-transform: lowercase;
+    text-transform: uppercase;
+    color: var(--color-second);
+}
+
+.modal-link:hover {
+    color: var(--color-hover);
+}
+
+// .modal {
+//     display: none;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0, 0, 0, 0.8); /* Темніше фонове затемнення */
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 9999; /* Щоб переконатися, що модальне вікно над усіма іншими елементами */
+// }
+
+// .modal-content {
+//     background-color: white;
+//     padding: 40px;
+//     border-radius: 10px;
+//     text-align: center;
+//     width: 90%; /* Ширина модального вікна */
+//     max-width: 800px; /* Максимальна ширина */
+// }
+
+// /* Сховати чекбокс */
+// #modal-toggle {
+//     display: none;
+// }
+
+// /* Коли чекбокс активний (checked), показати модальне вікно */
+// #modal-toggle:checked + .modal {
+//     display: flex;
+// }
+
+// /* SVG кнопка для відкриття/закриття */
+// .svg-btn {
+//     width: 50px;
+//     height: 50px;
+//     cursor: pointer;
+// }
+
+// /* Стиль для SVG кнопки при наведенні */
+// .svg-btn:hover path {
+//     fill: blue;
+// }
+
+// /* Кнопка для закриття модального вікна */
+// .close-btn {
+//     display: block;
+//     margin-top: 20px;
+//     background-color: red;
+//     color: white;
+//     padding: 10px 20px;
+//     border: none;
+//     border-radius: 5px;
+//     text-decoration: none;
+//     cursor: pointer;
+// }
+
+// /* Стиль для відкриття модального вікна */
+// .open-btn-container {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 100px;
+// }
+
+// /* Стиль для SVG кнопки */
+// .svg-btn {
+//     fill: currentColor;
+//     color: blue;
+//     transition: color 0.3s ease;
+// }
+
+// .svg-btn:hover {
+//     color: red;
+// }
+
+
+// другий варіант======
+
+
+/* Сховати чекбокс */
+#menu-toggle {
+    display: none;
+}
+
+label {
+    @media screen and (min-width:768px) {
+                width: 768px;
+                display: none;
+            }
+}
+
+/* Базові стилі для бургер-меню */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1000;
+    /* Поверх меню */
+}
+
+.menu-btn:hover path {
+    fill: #ff5722;
+    /* Колір при наведенні */
+}
+
+/* Повноекранне меню */
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(0, 0, 0, 0.9);
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+}
+
+/* Стиль для елементів меню */
+.menu-content {
+    color: white;
+    font-size: 2em;
+}
+
+/* Показати меню при активному чекбоксі */
+#menu-toggle:checked+.menu {
+    display: flex;
+}
+
+/* Кнопка для закриття меню (хрестик) */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.close-btn:hover path {
+    fill: #ff5722;
+    /* Колір при наведенні */
+}

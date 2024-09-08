@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    min-width: 320px;
+    padding: 0 30px;
+    margin: 0 auto;
+    //todo  outline-міксін 
+    // @include outline();
+        
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        outline: 1px solid blue;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        outline: 1px solid green;
+    }
+}
